@@ -1,7 +1,7 @@
 from setuptools import setup
 from torch.utils.cpp_extension import BuildExtension, CUDAExtension
 
-INSTALL_REQUIREMENTS = ['torch', 'torchvision', 'matplotlib']
+INSTALL_REQUIREMENTS = ['torch==1.4.0', 'torchvision', 'matplotlib']
 
 ext_modules=[
     CUDAExtension('implicit_seg.cuda.interp2x_boundary2d', [
